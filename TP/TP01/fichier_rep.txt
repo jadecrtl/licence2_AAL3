@@ -1,0 +1,58 @@
+Exercice 1 :
+
+1) egrep -n Odette swann.txt
+
+2) egrep -c Odette swann.txt 
+449
+
+3) egrep -c Gilberte swann.txt
+99
+
+4) egrep -o Gilberte swann.txt | wc -l
+100
+
+5) Parce qu'il existe une ligne avec deux occurences du nom. 
+egrep -n Gilberte.* Gilberte swann.txt
+15379 
+
+6) egrep "Gilberte|Odette" swann.txt | wc -l
+547
+
+7) egrep -n "Gilbete.* Odette|Odette.* Gilberte" swann.txt | wc -l
+
+8) egrep -c "\+" swann.txt
+0
+egrep -c "\?" swann.txt
+274
+
+9) egrep -c [0-9] swann.txt
+7
+ou 
+egrep "[^0-9]* [0-9][^0-9]* " swann.txt
+3
+
+10) egrep z[a-z] swann.txt | wc -l
+103
+
+11) egrep z[^a-z] swann.txt | wc -l
+763
+
+12) egrep ".* \?$" swann.txt | wc -l
+44
+
+13) egrep " [aA]b|^[aA]b" swann.txt -c
+
+14) egrep "<[^>]* ?" swann.txt " -c
+557
+
+15) egrep "^<[^>]* ?" 
+37
+
+16) egrep ".* ,.* ,.* ,.* ,.* ," swann.txt
+
+17) egrep "[a-zA-Z]{17,}" swann.txt
+19
+
+Exercice 2 :
+
+à finir.
