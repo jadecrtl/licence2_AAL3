@@ -6,10 +6,10 @@
 
 %{
 public int count = 0;
-public int nombre = 0;
+public double nombre = 0;
 %}
 
-chiffre = [0-9]
+chiffre = -?[0-9]*\.?[0-9]+
 
 %{eof
 	System.out.println("nbre de chiffres = "+ count);
@@ -18,5 +18,5 @@ chiffre = [0-9]
 %eof}
 
 %%
-{chiffre}     {count++;nombre+=Integer.parseInt(yytext());}
+{chiffre}     {count++;nombre+=Double.parseDouble(yytext());}
 [^]           {}

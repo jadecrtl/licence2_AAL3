@@ -9,7 +9,7 @@ public int count = 0;
 public int nombre = 0;
 %}
 
-chiffre = [0-9]
+chiffre = -?[0-9]+
 
 %{eof
 	System.out.println("nbre de chiffres = "+ count);
