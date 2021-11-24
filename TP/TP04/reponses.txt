@@ -1,0 +1,3 @@
+On cherche à comprendre pourquoi le résultat est bien ça :
+j'ai compris
+Pour la question 2 c'est pas chiffres.jflex mais blabla.jflex
