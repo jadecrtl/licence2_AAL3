@@ -1,0 +1,18 @@
+Exemple avec deux états : analyse lexicale avec des identificateurs et
+des entiers qui peuvent avoir un exposant (comme 756e2).
+
+Compiler:
+---------
+
+javac Sym.java
+javac Token.java
+jflex artith.flex
+javac Lexer.java
+javac Test.java
+
+Exécuter:
+---------
+java Test input
+
+
+
