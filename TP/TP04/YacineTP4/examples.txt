@@ -1,0 +1,18 @@
+Regex
+1. code -> matches the word code.
+2. code|program -> matches code or program
+3. [abc] -> matches any single char inside brackets
+4. [^abc] -> matches any single char except those in the group
+5. [A-Za-z] -> lowercase and uppercase
+6. . -> matches any char
+7. \d -> digits 0-9
+8. \w -> [a-zA-Z0-9\_]
+9. a? -> zero or one time
+10. a* -> zero or more
+11. a+ -> 1 or more
+12. a{3} -> aaa
+13. a{3,} -> three or more (don't work in jflex i think)
+14. a{3, 5} aaa | aaaa | aaaaa
+15. \n -> newline
+16. \t -> tab
+

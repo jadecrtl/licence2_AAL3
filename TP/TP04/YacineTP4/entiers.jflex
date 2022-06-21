@@ -9,7 +9,7 @@
   public int somme=0;
 %}
 
-entier = -*[0-9]+
+entier = -?[0-9]+
 
 %{eof
   System.out.println("nombre d'entiers = "+count);
